@@ -1,12 +1,9 @@
-# Google Sheet details
-RANGE_NAME = "Sheet1!A1"
-
-def write(service, data, sheet):
+def write(service, data, sheet, range="Sheet1!A1"):
     # Append to the Google Sheet
     body = {"values": data}
     service.spreadsheets().values().append(
         spreadsheetId=sheet,
-        range=RANGE_NAME,
+        range=range,
         valueInputOption="RAW",
         body=body
     ).execute()
