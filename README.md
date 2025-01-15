@@ -1,4 +1,4 @@
-# Email Parser Application
+# Budget Tool
 
 This application parses email push notifications from credit card companies and writes the extracted data to Google Sheets.
 
@@ -52,7 +52,8 @@ This application parses email push notifications from credit card companies and 
    ```bash
    pip install -r requirements.txt
 4. Run the application
-   ``` python main.py
+   ```bash
+   python main.py
 
 ## Notes
 
